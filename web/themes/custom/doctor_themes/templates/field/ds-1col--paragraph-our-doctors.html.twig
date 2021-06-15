@@ -1,0 +1,98 @@
+
+
+
+<!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>{{ content.field_first_doctor_title }}</h2>
+          <p>{{ content.field_first_description }}</p>
+        </div>
+
+ {# {% for footer_link in  content.field_footer_link['#items'] %}
+            <a href="{{ footer_link.url() }}">
+                <img src="{{ attribute(content['field_icon_image'], loop.index -1)['#markup'] }}" class="float-md-right pl-2 footer__icon-hover" style="width: 2.5rem;">
+        </a> #}
+                 {# {% endfor %} #}
+
+
+        <div class="row">
+     
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              {# <div class="pic"> {{ content.field_our_doctor_images.0 }}</div> #}
+            <div class="pic"><img src="{{ content.field_our_doctor_images.0['#markup'] }}" class="img-fluid" alt="img"></div>
+            
+                
+              <div class="member-info">
+                <h4>{{ content.field_doctor_name.0 }}</h4>
+                <span>{{ content.field_doctor_designation.0 }}</span>
+                <p> {{ content.field_doctor_description.0 }}</p>
+               
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              {# <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div> #}
+                <div class="pic"><img src="{{ content.field_our_doctor_images.1['#markup'] }}" class="img-fluid" alt="img"></div>
+              <div class="member-info">
+                <h4>{{ content.field_doctor_name.1 }}</h4>
+                <span>{{ content.field_doctor_designation.1 }}</span>
+                <p>{{ content.field_doctor_description.1 }}</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {# <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Cardiology</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> #}
+{# 
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Neurosurgeon</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> #}
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->

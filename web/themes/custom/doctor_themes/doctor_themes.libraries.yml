@@ -1,0 +1,67 @@
+mylibraries:
+  css:
+    theme:
+      css/bootstrap.min.css: {} 
+      css/main.min.css: {}
+      
+  js:
+    js/popper.min.js: {}  
+    js/bootstrap.min.js: {} 
+  dependencies:
+    - core/jquery
+
+animation:
+  css:
+    theme:
+      libraries/animateCSS/animate.min.css: {} 
+
+icofont:
+  css:
+    theme:
+      libraries/icofont/icofont.min.css: {} 
+
+boxicons:
+  css:
+    theme:
+      libraries/boxicons/css/boxicons.min.css: {} 
+
+venobox:
+  css:
+    theme:
+      libraries/venobox/venobox.css: {} 
+  js:
+    libraries/venobox/venobox.min.js: {}  
+   
+
+remixicon:
+  css:
+    theme:
+      libraries/remixicon/remixicon.css: {} 
+
+owlcarousel:
+  css:
+    theme:
+      libraries/owl.carousel/assets/owl.carousel.min.css: {} 
+  js:
+    libraries/owl.carousel/owl.carousel.min.js: {}  
+
+counterup:
+  js:
+    libraries/counterup/counterup.min.js: {}  
+   
+jquery-easing:
+  js:
+    libraries/jquery.easing/jquery.easing.min.js: {} 
+
+   
+jquery:
+  js:
+    libraries/jquery/jquery.min.js: {} 
+
+bootstrap-datepicker:
+  css:
+    theme:
+      libraries/bootstrap-datepicker/css/bootstrap-datepicker.min.css: {} 
+  js:
+    libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js: {}  
+   

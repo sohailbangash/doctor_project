@@ -1,0 +1,43 @@
+{# {{ content.field_patient_name }}
+{{ content.field_patient_email }}
+{{ content.field_patient_disease }}
+{{ content.field_patient_contact }}
+{{ content.field_patient_age }}
+{{ content.field_diease_department }} #}
+
+ <div class="section-title">
+          <h2>{{ content.field_patient_name }}</h2>
+          {# <p>{{  content.field_services_description.0  }}</p> #}
+        </div>
+<table class="table">
+  <thead>
+    <tr>
+      {# <th scope="col">#</th> #}
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Disease</th>
+      <th scope="col">Age</th>
+      <th scope="col">Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {# <th scope="row">1</th> #}
+      <td>{{ content.field_patient_name }}</td>
+      <td>{{ content.field_patient_email }}</td>
+      <td>{{ content.field_patient_contact }}</td>
+       <td>{{ content.field_patient_disease }}</td>
+        <td>{{ content.field_patient_age }}</td>
+         <td>{{ content.field_diease_department }}</td>
+      
+    </tr>
+   
+  </tbody>
+</table>
+	
+    	
+
+            
+
+            	

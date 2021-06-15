@@ -1,0 +1,104 @@
+ {#
+<header class=""> #}
+    <div class="col-md-12">
+        <div class="row bg-heading-color">
+            <div class="col-md-6  navbar_log mt-3">
+                {% if page.navbar_brand %} {{page.navbar_brand}} {% endif %}
+            </div>
+            <div class="col-md-6 region--address mt-3">
+                {{ page.navbar_icons }}
+            </div>
+            
+        </div>
+    </div>
+
+
+
+   
+        <div class="offset-3">{{ page.navbar }}</div>
+
+
+    {# <div class="col-md-12">
+        <div class="row bg-heading-color justify-content-end">
+            <div class="col-md-6 mt-3">{{ page.navbar_shopping_cart }}</div>
+        </div>
+    </div> #}
+
+
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">{{ page.tabs }}</div>
+        </div>
+    </div>
+    <div class="">
+
+        {{ page.content }} {#
+        <div class="col-md-6"> #} {# {{ page.header_region_first }} #} {# </div> #}
+    </div>
+
+    {# </header> #}
+
+<!----------------------- SECOND SECTION START------------------------------------->
+<!-- Second Section  Start -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">{{page. region_second_first}}</div>
+
+                <div class="col-md-6">
+                    <div class="col-md-12"> {{ page.region_second_second }}</div>
+
+                    <div class="col-md-12"> {{ page.region_second_third }}</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-------- SECOND SECTION END--------------->
+
+
+
+
+
+<!----------------------- BUTTON SECTION START------------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            {{ page.region_third_buttton }} {# <button type="button" class="btn btn-outline-warning">Warning</button> #}
+        </div>
+
+    </div>
+</div>
+<!------ BUTTON SECTION END---------->
+
+
+
+
+
+
+
+{# <header>
+    {{ page.help }} {{ page.message }} {{ page.tabs }}
+
+</header>
+
+<main>
+
+    <div class="row">
+        <div class="col-md-4">{{ page.region_first }}</div>
+        <div class="col-md-8">{{ page.content }}</div>
+    </div>
+
+</main> #}
+<footer class= 'col-md-12'>
+    <div class="row">
+        <div class="col-md-4">{{ page.footer_first }}</div>
+        <div class="col-md-4">{{ page. footer_second }}</div>
+        <div class="col-md-4">{{ page.footer_third }}</div>
+    </div>
+
+    {{ page.footer }}
+</footer>
+{# </header> #}

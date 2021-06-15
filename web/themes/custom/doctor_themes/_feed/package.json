@@ -1,0 +1,52 @@
+{
+  "name": "mango-starterkit",
+  "version": "1.0.0",
+  "description": "Gulp based sass, scss & js starterkit with bootstrap",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://devasghar@bitbucket.org/devasghar/mango-starterkit.git"
+  },
+  "keywords": [
+    "starterkit",
+    "fed",
+    "npm",
+    "gulp",
+    "sass",
+    "scss",
+    "js",
+    "babel",
+    "autoprefixer",
+    "browser-sync"
+  ],
+  "author": "devasghar <dev.asghar@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/rmh-asghar/mango-starterkit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-modernizr": "^3.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglifycss": "^1.1.0",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

@@ -1,0 +1,80 @@
+
+  {# {{ dump(content.field_header_section_image.0['#markup']|keys) }} #}
+  {# {{ kint(content["field_icon_image"].0["#markup"]|keys) }} #}
+ {# background: url("E:/xampp/htdocs/doctor_project/web/themes/custom/doctor_themes/_feed/img/hero-bg.jpg") top center; #}
+   {# background: url("{{ content.field_header_section_image.0['#markup'] }}") top center; #}
+<style>
+#hero {
+  width: 100%;
+  height: 90vh;
+
+  background: url("themes/custom/doctor_themes/_feed/img/hero-bg.jpg") top center; 
+     
+  background-size: cover;
+  position: relative;
+  margin-bottom: -200px;
+
+}
+{# 
+  .footer {
+        background-image: url({{ content.field_footer_bg_image.0['#markup'] }});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+     } #}
+ 
+</style>
+
+    {# {% for footer_link in  content.field_footer_link['#items'] %}
+          <a href="{{ footer_link.url() }}">
+              <img src="{{ attribute(content['field_icon_image'], loop.index -1)['#markup'] }}" class="float-md-right pl-2 footer__icon-hover" style="width: 2.5rem;">
+        </a>
+                 {% endfor %} #}
+
+ <!-- ======= Hero Section ======= -->
+  <section id="hero"  class="d-flex align-items-center full-img">
+    <div class="container">
+      <h1>{{ content.field_header_title }}</h1>
+      <h2>{{ content.field_header_description }}</h2>
+ 
+ {% for header_link in  content.field_header_btn['#items'] %}
+          <a href="{{ header_link.url() }}" class="btn-doctor scrollto"> {{ header_link.title }}
+              
+        </a>
+                 {% endfor %} 
+
+
+      {# <a href='{{ content.field_header_btn.0 }}' class="btn-doctor scrollto">Doctor</a>
+       <a href='{{ content.field_header_btn.1 }}' class="btn-patient scrollto">Patient </a> #}
+    </div>
+  </section><!-- End Hero -->
+
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3> {{ content.field_small_header_title }}
+              </h3>
+              <p>
+                {{ content.field_long_header_description }}
+                
+              </p>
+              <div class="text-center">
+                <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+   
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->

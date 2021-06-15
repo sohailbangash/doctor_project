@@ -1,0 +1,60 @@
+
+
+
+
+
+<!-- ======= News Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+      
+
+        <div class="section-title">
+          <h2>{{ content.field_first_title }}</h2>
+          {# <p>{{  content.field_services_description.0  }}</p> #}
+        </div>
+
+        <div class="row">
+
+             {# {% if content %}
+            <div class="Parent"> 
+              {% for item in items %}
+                <div class="child-wrapper">{{ item.content }}</div>
+              {% endfor %}
+            </div>
+            {% endif %} #}
+
+         
+
+         {# {% if content %} #}
+         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="card">
+             {# {%  for item in content %} #}
+            <div class="card-img-top card__img">{{ content.field_news_image }} </div>
+            <div class="card-body">
+            {# <h5 class="card-title">Card title</h5> #}
+            <h5 class="card-text">{{ content.field_descripation }}</h5>
+            <p class="card-text"><small class="text-muted"> {{ content.field_upda }}</small></p>
+         </div>
+          </div>
+  </div>
+ {# {% endfor %}
+  {% endif %}  #}
+
+
+<!-- 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heartbeat"></i></div>
+              <h4><a href="">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+    
+
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
