@@ -1,0 +1,20 @@
+.login_account a{
+     display: flex;
+    justify-content: space-evenly;
+    border-radius: 100px;
+    padding: .5rem 1rem;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    transition: all .3s;
+    background-color: #fc143b1f;
+    width: 50%;
+    &:hover{
+        box-shadow: 0 1rem 2rem rgba(black, 0.15);
+           transform: translateY(-3px);
+           background-color: #fc143bc2;
+    }
+
+}
+
