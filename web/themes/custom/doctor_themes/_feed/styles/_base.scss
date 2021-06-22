@@ -8,27 +8,38 @@ $color-grey-light-3: #eee;
 $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
 
-// FONT VARIABLES
-// $font-primary: "Nunito",
-// sans-serif;
-// $font-display: "Josefin Sans",
-// sans-serif;
-// *,
-// *::before,
-// *::after {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: inherit;
-// }
+    $color-orange-light: #ffc556;
+    $color-primary: #eb2f64;
+    $color-primary-light: #FF3366;
+    $color-primary-dark: #BA265D;
+    $color-primary-light-red: #ffa6a6;
+    $color-grey-light-1: #faf9f9;
+    $color-grey-light-2: #f4f2f2;
+    $color-grey-light-3: #f0eeee;
+    $color-grey-light-4: #ccc;
+    $color-grey-dark-1: #333;
+    $color-grey-dark-2: #777;
+    $color-grey-dark-3: #999;
+    $color-light-brown: #3d2514;
+    $color-primary-green-1: #7ed56f;
+    $color-primary-green-2: #55c57a;
+    $color-primary-dark-1: #28b485;
+    $color-dark: #777;
+    $color-dark2: #999;
+    $color-half-white: #fff;
+    $color-black: #000;
+    $color-white: white;
+    $color-grey-dark-1: #333;
+    $color-secondary-light: #ffb900;
+    $color-secondary-dark: #f82222;
+    $color-blue-light: #2998ff;
+    $color-blue-dark: #5643fa;
+    $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    $margin-top: 50px;
+    $margin-top-90: 9rem;
+    // --mt-30: margin-top: 30px;
+    // $bg-image-linear: linear-gradient(to right bottom, rgba(218, 92, 92, 0.8), rgb(92, 218, 92, 0.8)), url();
 
-// html {
-//     box-sizing: border-box;
-//     // font-size: 62.5%;
-// }
-
-// body{
-// 	background-color: white;
-// }
 
 /*--------------------------------------------------------------
 # General
