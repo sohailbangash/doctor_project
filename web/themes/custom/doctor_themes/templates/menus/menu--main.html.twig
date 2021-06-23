@@ -15,9 +15,7 @@
            {% for item in items %}
 
             {% if item.is_expanded %}
-          <!-- <li class="active"><a href="index.html">Home</a></li> -->
-        
-                  <li class="drop-down"><a href="">{{ item.title }}</a>
+          <!-- <li class="active"><a href="index.html">Home</a></li> -->                  <li class="drop-down"><a href="">{{ item.title }}</a>
             <ul>
                {% for subitem in  item.below %}
               <li class="nav-menu"><a href="{{ subitem.url }}">{{ subitem.title }}</a>
@@ -33,10 +31,6 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-
-
-
-      
 
       {# <a href="#" class="appointment-btn scrollto">DONATE</a> #}
 

@@ -2,8 +2,6 @@
 # Header
 --------------------------------------------------------------*/
 
-
-
 #header {
     background: #fff;
     transition: all 0.5s;
@@ -36,6 +34,14 @@
     // max-height: 40px;
     min-width: 10rem;
     height: auto;
+}
+
+.fixed__top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 @media (max-width: 992px) {

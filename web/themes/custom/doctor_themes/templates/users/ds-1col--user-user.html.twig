@@ -4,7 +4,6 @@
     <section id="doctors" class="doctors">
       <div class="container">
 
-     
         <div class="section-title">
           {# <h2>Welcome  {{ field_patient_user_name}}</h2> #}
           {# <p>Our hospital is a health care institution providing patient treatment with specialized staff and equipment which plays an important role in society</p> #}
@@ -18,12 +17,12 @@
         </div>
 
         <div class="row">
-     
+
           <div class="col-lg-6">
             <div class="member d-flex align-items-start">
               <div class="user-pic img-fluid">  {{ content.field_your_image }}</div>
             {# <div class="pic"><img src="{{ content.field_our_doctor_images.0['#markup'] }}" class="img-fluid" alt="img"></div> #}
-           
+
 
             </div>
           </div>
@@ -31,7 +30,7 @@
 
            <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
-            
+
               <div class="member-info">
 
               <ul class="list-group">
@@ -40,11 +39,9 @@
                <li class="list-group-item list-group-item-action list-group-item-light">{{ content.field_contact }}</li>
                 <li class="list-group-item list-group-item-action list-group-item-light">{{ content.field_age }}</li>
                 <li class="list-group-item list-group-item-action list-group-item-light">{{ content.field_patient_user_email }}</li>
-         
-      
+
                 </ul>
 
-                
 
 
                 {# <div class="social">
@@ -57,11 +54,12 @@
 
               </div>
             </div>
-          </div>      
+          </div>
         </div>
 
       </div>
     </section><!-- End Patient Profile Section -->
+
    {% elseif ('doctor' in user.getroles(TRUE)) %}
       <!-- ======= Doctors profile Section ======= -->
 
@@ -81,20 +79,16 @@
 
 
         <div class="row">
-     
           <div class="col-lg-6">
             <div class="member d-flex align-items-start">
               <div class="pic img-fluid">  {{ content.field_dr_images }}</div>
             {# <div class="pic"><img src="{{ content.field_our_doctor_images.0['#markup'] }}" class="img-fluid" alt="img"></div> #}
-           
-
             </div>
           </div>
 
 
            <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
-            
               <div class="member-info">
               <ul class="list-group list-group-flush">
                <li class="list-group-item">{{ content.field_dr_department_category }}</li>
@@ -103,19 +97,16 @@
                 <li class="list-group-item">{{ content.field_dr_email_user }}</li>
                 <li class="list-group-item">{{ content.field_dr_specializations }}</li>
                 <li class="list-group-item">{{ content.field_your_dr_fees }}</li>
-               
-               
                   <li class="list-group-item"></li>
 
 
-                 
 </ul>
              {% if logged_in %}
                    {# <div class="list-group-item" style='background: #00000017;font-weight: bold;border-radius: 30px;'>{{ content.field_your_appointments }}</div>
                 {% else %} #}
-                
+
                      <a href="http://localhost/doctor_project/web/your_appointments" class="list-group-item" style='background: #00000017;font-weight: bold;border-radius: 30px;'>Your Appointments</a>
-                
+
 
                 <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
                 <strong> Thank you! {{ content.field_your_doctor_name }}</strong> Thank you for joining your Hospital
@@ -124,7 +115,6 @@
                 </button>
                 </div>
 
-                
                 {% endif %}
 
                 <div class="social">
@@ -135,18 +125,16 @@
                 </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
 
       </div>
     </section><!-- End Doctors Section -->
       {% else %}
-         {% if logged_in %}
+          {% if logged_in %}
                    <div class="list-group-item" style='background: #00000017;font-weight: bold;border-radius: 30px;'>{{ content.field_take_appointment }}</div>
                 {% else %}
-                
                      <a href="http://localhost/doctor_project/web/user/login" class="list-group-item" style='background: #00000017;font-weight: bold;border-radius: 30px;'>Login</a>
-                
 
                 <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
                 <strong> NOTE!</strong> First you login.Then Book your Appointment!
@@ -154,15 +142,5 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-
-                
                 {% endif %}
 {% endif %}
-
-
-
-
-  
-
-
-  
