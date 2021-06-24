@@ -9,21 +9,20 @@
         </div>
 
         <div class="row">
-        
+
+     {% for key, value in content.field_news_image['#items'].value %}
          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="card" style="border:none;">
-            <div class="card-img-top card__img">{{ content.field_news_image }} </div>
+            <div class="card-img-top card__img">{{ content.field_news_image[key] }} </div>
             <div class="card-body inFocus_body">
             {# <h5 class="card-title">Card title</h5> #}
-            <h5 class="card-text inFocus_text">{{ content.field_descripation }}</h5>
-           
+            <h5 class="card-text inFocus_text">{{ content.field_descripation[key] }}</h5>
          </div>
           </div>
   </div>
 
-
-
-<!-- 
+  {% endfor %}
+<!--
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
               <div class="icon"><i class="icofont-heartbeat"></i></div>
@@ -32,7 +31,6 @@
             </div>
           </div>
 
-    
 
           </div> -->
 

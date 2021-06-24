@@ -1,23 +1,23 @@
 //********************* Contact Form Section ****************************
-   .web-form {
-       .form-text,
-       .form-email,
-       .form-tel,
-       .form-textarea {
-           display: block;
-           margin-top: 1em;
-           padding: .4em;
-           border: 1px solid #ccc;
-           border-radius: 6px;
-           border-width: 2px 1px 1px 1px;
-           border-color: #b1b1b194;
-           &:focus {
-               outline: none;
-               border-bottom: 2px solid #28b485;
-           }
-           &:focus:invalid {
-               border-bottom: 2px solid #f82222;
-           }
+.web-form {
+    .form-text,
+    .form-email,
+    .form-tel,
+    .form-textarea {
+        display: block;
+        margin-top: 1em;
+        padding: .4em;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        border-width: 2px 1px 1px 1px;
+        border-color: #b1b1b194;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid #28b485;
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid #f82222;
+        }
         //    @include respond(small-phone) {
         //        max-width: 100%;
         //    }
@@ -27,36 +27,33 @@
         //    @include respond(tab-port) {
         //        max-width: 100%;
         //    }
-       }
-        .webform-button--submit {
-       border-radius: 100px;
-       padding: .5rem 2rem;
-       border: none;
-       font-size: 1.2rem;
-       font-weight: 500;
-       color: black;
-       transition: all .3s;
-       background-color: #fc143b1f;
-       &:hover {
-           box-shadow: 0 1rem 2rem rgba(black, 0.15);
-           transform: translateY(-3px);
-           background-color: #fc143bc2;
-       }
-       &:active {
-           outline: none;
-           text-decoration: none;
-           box-shadow: 0 .5rem 2rem rgba(black, 0.15);
-           transform: translateY(0);
+    }
+    .webform-button--submit {
+        border-radius: 100px;
+        padding: .5rem 2rem;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+        transition: all .3s;
+        background-color: #fc143b1f;
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba(black, 0.15);
+            transform: translateY(-3px);
+            background-color: #fc143bc2;
+        }
+        &:active {
+            outline: none;
+            text-decoration: none;
+            box-shadow: 0 .5rem 2rem rgba(black, 0.15);
+            transform: translateY(0);
             background-color: #48f51cd2;
-       }
-       &:focus {
-           outline: none;
-       }
-   }
-
-   .js-form-required{
-       color: red;
-   }
- 
-       }
-   
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .js-form-required {
+        color: red;
+    }
+}

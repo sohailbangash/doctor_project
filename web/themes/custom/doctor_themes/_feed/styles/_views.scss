@@ -2,34 +2,50 @@
 # Views
 --------------------------------------------------------------*/
 
-.views{
+.views {
     font-size: 1.3rem;
     /* color: red !important; */
     border-bottom: 1px solid red;
     margin-bottom: 10px;
 }
 
-.view-display a{
+.view-display a {
     display: block;
     text-align: center;
 }
 
-.view__text{
-     display: block;
+.view__text {
+    display: block;
     text-align: center;
 }
 
-.views_table{
+.views_table {
     color: red;
     background: white;
     margin-left: 4rem;
     border: 1px solid red;
+    &:hover {
+        color: white;
+        background: rgb(252, 42, 42);
+    }
+}
 
-    &:hover{
-        color:white;
-         background: rgb(252, 42, 42);
-    }
-    }
-.view_table_gip{
+.view_table_gip {
     vertical-align: middle !important;
+}
+
+
+/* -------------------------------- form views bulk ------------------------------- */
+
+.views_bulk {
+    color: #fc143b8f;
+    background: white;
+    // margin-left: 4rem;
+    border: 1px solid red;
+    border-radius: 6px;
+    &:hover {
+        color: white;
+        // background: rgb(252, 42, 42);
+        background-color: #fc143bd9;
+    }
 }
