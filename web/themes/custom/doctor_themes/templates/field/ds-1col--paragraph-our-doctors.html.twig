@@ -18,7 +18,9 @@
 
 
         <div class="row">
-          <div class="col-lg-6">
+
+        {% for key,value in content.field_our_doctor_images['#items'].value  %}
+          <div class="col-lg-6 mt-lg-0">
             <div class="member d-flex align-items-start">
 
 
@@ -28,9 +30,9 @@
                   <div class="pic"><img src="{{ content.field_our_doctor_images['#markup'].entity.uri.value }}" class="img-fluid" alt="img"></div>
 
               <div class="member-info">
-                <h4>{{ content.field_doctor_name.0 }}</h4>
-                <span>{{ content.field_doctor_designation.0 }}</span>
-                <p> {{ content.field_doctor_description.0 }}</p>
+                <h4>{{ content.field_doctor_name[key] }}</h4>
+                <span>{{ content.field_doctor_designation[key] }}</span>
+                <p> {{ content.field_doctor_description[key] }}</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -41,10 +43,10 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
+          {# <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start"> #}
               {# <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div> #}
-                <div class="pic"><img src="{{ content.field_our_doctor_images.1['#markup'] }}" class="img-fluid" alt="img"></div>
+                {# <div class="pic"><img src="{{ content.field_our_doctor_images.1['#markup'] }}" class="img-fluid" alt="img"></div>
               <div class="member-info">
                 <h4>{{ content.field_doctor_name.1 }}</h4>
                 <span>{{ content.field_doctor_designation.1 }}</span>
@@ -57,15 +59,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> #}
 
-        </div>
-
-         {% for user in users %}
-        <li>{{ user.username|e }}</li>
-
-        
     {% endfor %}
+
+     </div>
 
       </div>
     </section><!-- End Doctors Section -->
