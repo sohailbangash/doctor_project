@@ -28,6 +28,8 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/devel": "^4.1",
+        "drupal/devel_kint_extras": "^1.0",
         "drupal/ds": "^3.9",
         "drupal/entity_browser": "^2.5",
         "drupal/google_tag": "^1.4",
@@ -43,6 +45,7 @@
         "drupal/views_bulk_operations": "^3.13",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.3",
+        "kint-php/kint": "^3.3",
         "netchainmedia/drupal_profile": "^1.0",
         "oomphinc/composer-installers-extender": "^2.0"
     },
@@ -111,8 +114,5 @@
                 ""
             ]
         }
-    },
-    "require-dev": {
-        "kint-php/kint": "^3.3"
     }
 }
