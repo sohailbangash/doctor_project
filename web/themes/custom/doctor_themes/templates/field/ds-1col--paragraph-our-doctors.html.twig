@@ -16,7 +16,9 @@
         </a> #}
                  {# {% endfor %} #}
 
-
+           {# <pre>
+{{ dump(content.field_our_doctor_images['#'].entity.uri.value) }} 
+<pre> #}
         <div class="row">
 
         {% for key,value in content.field_our_doctor_images['#items'].value  %}
@@ -26,8 +28,9 @@
 
               {# <div class="pic"> {{ content.field_our_doctor_images.0 }}</div> #}
             {# <div class="pic"><img src="{{ content.field_our_doctor_images.0['#markup'] }}" class="img-fluid" alt="img"></div> #}
+ 
 
-                  <div class="pic"><img src="{{ content.field_our_doctor_images['#markup'].entity.uri.value }}" class="img-fluid" alt="img"></div>
+                  {# <div class="pic"><img src="{{ content.field_our_doctor_images['#markup'].entity.uri.value }}" class="img-fluid" alt="img"></div> #}
 
               <div class="member-info">
                 <h4>{{ content.field_doctor_name[key] }}</h4>
