@@ -16,8 +16,8 @@
  */
 #}
 <div class="container">
-  <div class="col-md-2 d-flex">
-   
+
+  <div class="col-md-12 row justify-content-center">
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
@@ -25,14 +25,16 @@
 {% for row in rows %}
   {%
     set row_classes = [
-      default_row_class ? 'views-row','jumbotron','ml-5','vew-display'
+      default_row_class ? 'views-row','view_doctor','ml-3','vew-display','col-lg-3','col-md-4 ','d-flex','mt-4','mt-md-5'
     ]
   %}
   <div{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}
   </div>
 {% endfor %}
+</div>
+
 
 </div>
-</div>
+
 
