@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "613d8b6f5dd3fcb6cd4505f001b38ef7",
+    "content-hash": "f82fe4a1e1df63e042bf6a2c1d6fbd32",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3760,6 +3760,66 @@
             }
         },
         {
+            "name": "drupal/simplify_menu",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simplify_menu.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simplify_menu-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "44905c5e90e297044e4536ce3a72c101a009e6f9"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1603078010",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "edutrul",
+                    "homepage": "https://www.drupal.org/user/1621444"
+                },
+                {
+                    "name": "jmolivas",
+                    "homepage": "https://www.drupal.org/user/678770"
+                },
+                {
+                    "name": "marcelovani",
+                    "homepage": "https://www.drupal.org/user/854220"
+                },
+                {
+                    "name": "mariohernandez",
+                    "homepage": "https://www.drupal.org/user/446544"
+                },
+                {
+                    "name": "shrop",
+                    "homepage": "https://www.drupal.org/user/14767"
+                }
+            ],
+            "description": "Adds a TwigExtension that grants access to Drupal's menu render array so it can be used within a twig template.",
+            "homepage": "https://www.drupal.org/project/simplify_menu",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simplify_menu"
+            }
+        },
+        {
             "name": "drupal/submit_and_continue",
             "version": "2.0.0",
             "source": {
@@ -3870,6 +3930,51 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/user_info_widget",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/user_info_widget.git",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/user_info_widget-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "e7f697234086746ce8ef41cd145634c2028f2639"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/simplify_menu": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1624964524",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "devasghar",
+                    "homepage": "https://www.drupal.org/user/3279549"
+                }
+            ],
+            "description": "Widget for user information and links",
+            "homepage": "https://www.drupal.org/project/user_info_widget",
+            "support": {
+                "source": "https://git.drupalcode.org/project/user_info_widget"
             }
         },
         {
@@ -8751,7 +8856,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/page_manager": 10
+        "drupal/page_manager": 10,
+        "drupal/user_info_widget": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

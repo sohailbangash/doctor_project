@@ -42,6 +42,7 @@
         "drupal/redirect": "^1.6",
         "drupal/simple_sitemap": "^3.7",
         "drupal/submit_and_continue": "^2.0",
+        "drupal/user_info_widget": "^1.0@alpha",
         "drupal/views_bulk_operations": "^3.13",
         "drupal/webform": "^6.0",
         "drush/drush": "^10.3",
