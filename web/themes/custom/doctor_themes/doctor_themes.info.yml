@@ -25,6 +25,7 @@ regions:
   navbar_icons: Navbar Icon
   navbar_shopping_cart: Shoping Cart
   navbar: Navigation
+  navicon: NavIcon
 
   help: Help
   message: message

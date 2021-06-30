@@ -3,8 +3,13 @@
 
 <!-- ======= Header ======= -->
 <!-- class="fixed-top" -->
+<<<<<<< HEAD
   <header id="header" class="fixed-top" >
     <div class="container d-flex align-items-center ">
+=======
+  <header id="" class="nav_position" >
+    <div class="container d-flex align-items-center" >
+>>>>>>> 62f216a24521f4d54c1e3a256766b7ad19d752c9
 
       {# <h1 class="logo mr-auto"><a href="index.html">Health Hospitial</a></h1> #}
       <!-- Uncomment below if you prefer to use an image logo -->
@@ -15,24 +20,10 @@
            {% for item in items %}
 
             {% if item.is_expanded %}
-          <!-- <li class="active"><a href="index.html">Home</a></li> -->
-        
-                  <li class="drop-down"><a href="">{{ item.title }}</a>
+          <!-- <li class="active"><a href="index.html">Home</a></li> -->           <li class="drop-down"><a href="">{{ item.title }}</a>
             <ul>
                {% for subitem in  item.below %}
-              <li class="drop-down"><a href="{{ subitem.url }}">{{ subitem.title }}</a>
-
-              <!--   <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li> -->
+              <li class="nav-menu"><a href="{{ subitem.url }}">{{ subitem.title }}</a>
                {% endfor %}
             </ul>
           </li>
@@ -46,13 +37,9 @@
       </nav><!-- .nav-menu -->
 
 
-
-
-      
-
-      <a href="#" class="appointment-btn scrollto">DONATE</a>
+      {# <a href="#" class="appointment-btn scrollto">DONATE</a> #}
 
     </div>
-  </header><!-- End Header -->
+  {# </header><!-- End Header --> #}
 
 
