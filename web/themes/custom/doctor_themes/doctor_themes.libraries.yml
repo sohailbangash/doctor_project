@@ -25,25 +25,24 @@ boxicons:
     theme:
       libraries/boxicons/css/boxicons.min.css: {} 
 
-venobox:
-  css:
-    theme:
-      libraries/venobox/venobox.css: {} 
-  js:
-    libraries/venobox/venobox.min.js: {}  
-   
+# venobox:
+#   css:
+#     theme:
+#       libraries/venobox/venobox.css: {} 
+#   js:
+#     libraries/venobox/venobox.min.js: {}  
+    
+# remixicon:
+#   css:
+#     theme:
+#       libraries/remixicon/remixicon.css: {} 
 
-remixicon:
-  css:
-    theme:
-      libraries/remixicon/remixicon.css: {} 
-
-owlcarousel:
-  css:
-    theme:
-      libraries/owl.carousel/assets/owl.carousel.min.css: {} 
-  js:
-    libraries/owl.carousel/owl.carousel.min.js: {}  
+# owlcarousel:
+#   css:
+#     theme:
+#       libraries/owl.carousel/assets/owl.carousel.min.css: {} 
+#   js:
+#     libraries/owl.carousel/owl.carousel.min.js: {}  
 
 counterup:
   js:
@@ -54,14 +53,14 @@ jquery-easing:
     libraries/jquery.easing/jquery.easing.min.js: {} 
 
    
-jquery:
-  js:
-    libraries/jquery/jquery.min.js: {} 
+# jquery:
+#   js:
+#     libraries/jquery/jquery.min.js: {} 
 
-bootstrap-datepicker:
-  css:
-    theme:
-      libraries/bootstrap-datepicker/css/bootstrap-datepicker.min.css: {} 
-  js:
-    libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js: {}  
+# bootstrap-datepicker:
+#   css:
+#     theme:
+#       libraries/bootstrap-datepicker/css/bootstrap-datepicker.min.css: {} 
+#   js:
+#     libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js: {}  
    
