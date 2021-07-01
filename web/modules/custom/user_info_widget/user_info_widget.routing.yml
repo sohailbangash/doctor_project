@@ -1,0 +1,7 @@
+user_info_widget.admin_settings:
+  path: /admin/config/content/user_info_widget_settings
+  defaults:
+    _title: User Info Widget Settings
+    _form: Drupal\user_info_widget\Form\UserInfoWidgetSettingsForm
+  requirements:
+    _permission: administer user_info_widget_settings
