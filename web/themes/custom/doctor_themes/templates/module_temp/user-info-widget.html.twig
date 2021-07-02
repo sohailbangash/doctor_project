@@ -1,0 +1,57 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* To override output, copy the "user-info-wdiget.html.twig" from the templates directory
+* to your theme's directory and customize it, just like customizing other
+* Drupal templates such as page.html.twig or node.html.twig.
+*
+* Available variables:
+* - user_picture
+* - alt
+* - title
+* - config_path
+* - menu
+* - username
+*
+* @see template_preprocess_field()
+* @ingroup themeable
+*/
+ default class 'user_info_block',
+#}
+
+{% set classes = [
+    'user_info_custom_block'
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+    {% if user_picture %}
+        <img class="noselect" src="{{ user_picture }}" alt="{{ alt }}" title="{{ title }}">
+    {% else %}
+        {% if logged_in %}
+            To configure user profile picture for the widget click <a href="{{ config_path }}">here</a>.
+        {% else %}
+            Ask administrator to configure user profile picture for the widget.
+        {% endif %}
+    {% endif %}
+
+    {% if menu %}
+        {% set items = simplify_menu(menu) %}
+    {% endif %}
+
+    <nav class="navigation__items dropdown">
+        {% if logged_in %}
+            {% if username %}
+                <li class="special__item"><span class="badge">{{ username }}</span></li>
+            {% endif %}
+        {% endif %}
+        {% for menu_item in items.menu_tree %}
+            <li class="navigation__item">
+                <a href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+            </li>
+        {% endfor %}
+    </nav>
+</div>
+
+
