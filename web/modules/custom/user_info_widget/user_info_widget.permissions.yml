@@ -1,0 +1,3 @@
+administer user_info_widget_settings:
+  title: Administer user info widget settings
+  description: Administrative access to the widget settings form.

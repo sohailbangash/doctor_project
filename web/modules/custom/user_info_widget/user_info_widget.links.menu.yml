@@ -1,0 +1,7 @@
+user_info_widget.settingsform:
+  title: User Info Widget
+  description: Configure fields from the user profile picture.
+  parent: system.admin_config_content
+  route_name: user_info_widget.admin_settings
+  weight: 3
+  menu_name: admin

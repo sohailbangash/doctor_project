@@ -1,0 +1,10 @@
+user-info-widget:
+  css:
+    theme:
+      css/user-info-widget.css: { }
+  js:
+    js/user-info-widget.js: { }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

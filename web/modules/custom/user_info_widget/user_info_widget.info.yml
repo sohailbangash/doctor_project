@@ -1,0 +1,15 @@
+name: User Info Widget
+description: Widget for user information and links
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - simplify_menu:simplify_menu
+
+configure: user_info_widget.admin_settings
+
+# Information added by Drupal.org packaging script on 2021-06-29
+version: '8.x-1.0-alpha5'
+project: 'user_info_widget'
+datestamp: 1624973624

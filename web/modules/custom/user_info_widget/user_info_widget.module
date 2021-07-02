@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function user_info_widget_theme() {
+  return [
+    'user_info_widget' => [
+      'variables' => [
+        'user_picture' => NULL,
+        'config_path' => NULL,
+        'menu' => NULL,
+        'alt' => NULL,
+        'title' => NULL,
+        'username' => NULL
+      ],
+    ],
+  ];
+}
+
+/**
+ * @param $route_name
+ * @param RouteMatchInterface $route_match
+ *
+ * @return string
+ */
+function user_info_widget_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.user_info_widget':
+      $output = '<h3>' . t('Introduction') . '</h3>';
+      $output .= '<p><strong>' . t('Module that provides simple user information widget with an option for a dropdown menu.') . '</strong></p>';
+      $output .= '<p>' . t('See the <a href=":blocks-documentation">online documentation</a> for the <strong>User Info Widget</strong> module.', [':blocks-documentation' => 'https://www.drupal.org/documentation/modules/user_info_widget/']) . '</p>';
+
+      return $output;
+  }
+}
