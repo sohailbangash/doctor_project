@@ -5,10 +5,17 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+    "content-hash": "e77bc8443370c67376475087d96ff0f8",
+=======
+    "content-hash": "f82fe4a1e1df63e042bf6a2c1d6fbd32",
+>>>>>>> 62f216a24521f4d54c1e3a256766b7ad19d752c9
+=======
     "content-hash": "f82fe4a1e1df63e042bf6a2c1d6fbd32",
 =======
     "content-hash": "e77bc8443370c67376475087d96ff0f8",
 >>>>>>> main
+>>>>>>> master
     "packages": [
         {
             "name": "alchemy/zippy",
