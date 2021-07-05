@@ -25,7 +25,8 @@
 
 .user_info_custom_block .dropdown {
     position: absolute;
-    top: 100%;
+    // top: 100%;
+    top: 3rem;
     left: -112px;
     right: 12px;
     max-height: 0;
@@ -38,7 +39,9 @@
 .user_info_custom_block .dropdown li {
     padding: 0 10px;
     background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    // box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0 2px 4px -2px #06060042;
+    // box-shadow: 0 2px 4px -2px rgb(6, 6, 6 / 25%);
     transition: all 0.3s ease-out;
 }
 
@@ -97,7 +100,8 @@
     text-align: center;
     font-size: 11px;
     padding: .7rem;
-    // background: repeating-linear-gradient( 45deg, #de2225, transparent 100px)
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    // box-shadow: 0 2px 4px -2px grey
 }
 
 .user_info_custom_block .dropdown li.special__item .badge {
@@ -125,5 +129,6 @@
     color: #fff !important;
     background: #fff !important;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    top: calc(100% + 1px);
     transition: 0.3s;
 }
