@@ -1,0 +1,52 @@
+    /*--------------------------------------------------------------
+# Forms and tables views  margin top 
+--------------------------------------------------------------*/
+    
+    // #views-form-appointments-page-1 {
+    //     margin-top: 6rem;
+    // }
+    // #edit-0--3 {
+    //     margin-top: 3rem;
+    // }
+    .table-margin-top {
+        margin-top: 6rem;
+    }
+    
+    #edit-field-your-doctor-name-value {
+        display: block;
+        margin-top: 1em;
+        padding: .4em;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        border-width: 2px 1px 1px 1px;
+        border-color: #b1b1b194;
+        margin-top: 5rem;
+        &:focus {
+            outline: none;
+            border-left: 2px solid #28b485;
+        }
+    }
+    /*--------------------------------------------------------------
+# Top Tabs
+--------------------------------------------------------------*/
+    
+    @mixin head_tab {
+        background-color: #fc6060;
+        color: white;
+        border-radius: 10px;
+    }
+    
+    ul.tabs {
+        margin: 6rem 0 0.5em;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .tabs a.is-active {
+        @include head_tab;
+    }
+    
+    .tabs a:focus,
+    .tabs a:hover {
+        @include head_tab;
+    }

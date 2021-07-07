@@ -1,25 +1,28 @@
 #user-login-form {
     background-color: #eaeaeaa6;
+    -webkit-box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
     box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
     padding: 3rem;
     width: 50%;
     margin-top: 5rem;
     border-radius: 10px;
     animation: blinker 1s linear infinite;
-    .form-text {
+    .form-text,
+    .form-pass {
         display: block;
         margin-top: 1em;
         padding: .4em;
         border: 1px solid #ccc;
         border-radius: 5px;
         border-width: 1px 3px 1px 3px;
-        border-color: #b1b1b194;
+        border-color: #b1b1b194 !important;
         &:focus {
-            outline: none;
-            border-bottom: 2px solid #28b485;
+            outline: none !important;
+            border-bottom: 2px solid #28b485 !important;
+            box-shadow: 0 0 0 0.2rem #b9060600 !important;
         }
         &:focus:invalid {
-            border-bottom: 2px solid #f82222;
+            border-bottom: 2px solid #f82222 !important;
         }
     }
     .js-form-required {
@@ -45,7 +48,9 @@
     &:hover {
         box-shadow: 0 1rem 2rem rgba(black, 0.15);
         transform: translateY(-3px);
-        background-color: #fc143bc2;
+        // background-color: #fc143bc2;
+        background-color: #ef4444c2;
+        color: white;
     }
     &:active {
         outline: none;
