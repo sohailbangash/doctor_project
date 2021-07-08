@@ -28,17 +28,26 @@
         </div>
     </div> #}
 
-
-    <div class="col-md-12">
+ {% if  page.user--login %}
+ <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-10"> {{ page.content }}</div>
+             <div class="col-md-2">{{ page.tabs }}</div>
+        </div>
+</div>
+   {% elseif  page.page--user %}
+         <div class="col-md-12">
         <div class="row">
             <div class="col-md-12">{{ page.tabs }}</div>
         </div>
     </div>
-    <div class="">
+        {{ page.content }}
+  {% endif %}
 
-        {{ page.content }} {#
+ 
+        {#
         <div class="col-md-6"> #} {# {{ page.header_region_first }} #} {# </div> #}
-    </div>
+    
 
     {# </header> #}
 
