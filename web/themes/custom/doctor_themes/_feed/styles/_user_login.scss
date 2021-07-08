@@ -1,10 +1,12 @@
-#user-login-form {
+#user-login-form,
+#user-pass {
     background-color: #eaeaeaa6;
     -webkit-box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
     box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
     padding: 3rem;
     width: 50%;
-    margin-top: 5rem;
+    // margin-top: 5rem;
+    margin-top: -3rem;
     border-radius: 10px;
     animation: blinker 1s linear infinite;
     .form-text,
@@ -18,11 +20,11 @@
         border-color: #b1b1b194 !important;
         &:focus {
             outline: none !important;
-            border-bottom: 2px solid #28b485 !important;
+            border-left: 2px solid #28b485 !important;
             box-shadow: 0 0 0 0.2rem #b9060600 !important;
         }
         &:focus:invalid {
-            border-bottom: 2px solid #f82222 !important;
+            border-left: 2px solid #f82222 !important;
         }
     }
     .js-form-required {

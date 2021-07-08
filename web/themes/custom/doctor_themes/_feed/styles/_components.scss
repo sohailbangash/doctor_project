@@ -9,7 +9,7 @@
     //     margin-top: 3rem;
     // }
     .table-margin-top {
-        margin-top: 6rem;
+        margin-top: 5rem;
     }
     
     #edit-field-your-doctor-name-value {
@@ -49,4 +49,9 @@
     .tabs a:focus,
     .tabs a:hover {
         @include head_tab;
+    }
+    /* --------------------------- login error message -------------------------- */
+    
+    .form-item--error-message {
+        color: $color-primary;
     }
