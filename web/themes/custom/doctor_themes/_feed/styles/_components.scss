@@ -11,6 +11,29 @@
     .table-margin-top {
         margin-top: 5rem;
     }
+    /* -------------------- remove create user link from tab -------------------- */
+    
+    li:nth-child(4) {
+        display: none !important;
+    }
+    /* -------------------- form img head icon -------------------- */
+    
+    .login_img {
+        width: 9.5%;
+        position: absolute;
+        margin: -5rem 0 0 -2rem;
+        height: auto;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        // transition: all .5s;
+        // &:hover {
+        //     transition: all .9s;
+        //     -webkit-transform: scale(1.03) translateY(-0.5rem);
+        //     transform: scale(1.05) translateY(-0.5rem);
+        //     -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+        //      box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+        // }
+    }
     
     #edit-field-your-doctor-name-value {
         display: block;
