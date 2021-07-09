@@ -18,13 +18,10 @@
 
 #user-register-form {
     // background-color: #eaeaeaa6;
-    background-color: #eaeaeaa6;
-    box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
+    // background-color: #eaeaeaa6;
+    box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.09);
     padding: 3rem;
-    // width: 80%;
     width: 50%;
-    // margin-top: 5rem;
-    margin-top: -3rem;
     border-radius: 10px;
     animation: blinker 1s linear infinite;
     #edit-mail,
@@ -45,6 +42,16 @@
     }
     .js-form-required {
         color: red;
+    }
+    transition: all .5s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &:hover {
+        transition: all .9s;
+        -webkit-transform: scale(1.01) translateY(-0.5rem);
+        transform: scale(1.01) translateY(-0.5rem);
+        -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+        box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
     }
 }
 
@@ -106,14 +113,12 @@ input[type="submit"] {
     width: 83%;
 }
 
-#edit-name--description {
-    color: $color-primary-light
-}
-
-#edit-pass--description {
-    color: $color-primary-light;
-}
-
+// #edit-name--description {
+//     color: $color-primary-light
+// }
+// #edit-pass--description {
+//     color: $color-primary-light;
+// }
 
 /* -------------------------- forget password page -------------------------- */
 
