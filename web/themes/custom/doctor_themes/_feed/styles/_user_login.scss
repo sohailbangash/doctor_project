@@ -1,3 +1,10 @@
+.margin--top-10 {
+    margin-top: 10rem;
+}
+
+// .margin--top-5 {
+//     margin-top: -5rem;
+// }
 #user-login-form,
 #user-pass {
     // background-color: #eaeaeaa6;
@@ -31,14 +38,16 @@
     .js-form-required {
         color: red;
     }
+    margin: 15rem 0 0 8rem;
+    margin-top: 10rem;
     transition: all .5s;
     position: relative;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     &:hover {
         transition: all .9s;
-        -webkit-transform: scale(1.02) translateY(-0.5rem);
-        transform: scale(1.02) translateY(-0.5rem);
+        // -webkit-transform: scale(1.02) translateY(-0.5rem);
+        // transform: scale(1.02) translateY(-0.5rem);
         -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
         box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
     }
@@ -76,4 +85,57 @@
     &:focus {
         outline: none;
     }
+}
+
+
+/* ------------------- user login page top tab Navigation ------------------- */
+
+#block-mylinks {
+    // background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 56rem;
+    // margin-top: 7rem;
+    width: 19%;
+    z-index: 1030;
+    position: fixed;
+}
+
+.block_my--links a {
+    &:link,
+    &:visited {
+        display: inline-block;
+        border-radius: 3px;
+        // font-size: 1rem;
+        // font-weight: 300;
+        padding: .4rem;
+        margin: .1rem;
+        color: #1977cc;
+        text-decoration: none;
+        // text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #0583ff96 50%);
+        background-size: 260%;
+        transition: all .4s;
+    }
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: whitesmoke;
+        transform: translateX(1rem);
+        // -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+        // box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+    }
+}
+
+ul.menu a.is-active {
+    // background-color: #6cb6ff42;
+    border-left: 2px double;
+    border-left-color: #60a2e6;
+    // color: #1977cc;
+    background-size: 260%;
+    padding: .4rem;
+    // -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+    // box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
 }
