@@ -9,7 +9,11 @@
     //     margin-top: 3rem;
     // }
     .table-margin-top {
-        margin-top: 5rem;
+        margin-top: 3rem;
+    }
+    
+    .margin-top--25 {
+        margin-top: 25rem;
     }
     /* -------------------- remove create user link from tab -------------------- */
     
@@ -54,9 +58,12 @@
 --------------------------------------------------------------*/
     
     @mixin head_tab {
-        background-color: #fc6060;
+        // background-color: #fc6060;
+        background-color: #0583ff96;
         color: white;
-        border-radius: 10px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
+        box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
     }
     
     ul.tabs {

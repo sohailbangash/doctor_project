@@ -43,13 +43,15 @@
     .js-form-required {
         color: red;
     }
+    margin: 15rem 0 0 8rem;
+    margin-top: 10rem;
     transition: all .5s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     &:hover {
         transition: all .9s;
-        -webkit-transform: scale(1.01) translateY(-0.5rem);
-        transform: scale(1.01) translateY(-0.5rem);
+        // -webkit-transform: scale(1.01) translateY(-0.5rem);
+        // transform: scale(1.01) translateY(-0.5rem);
         -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
         box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
     }
