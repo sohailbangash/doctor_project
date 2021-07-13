@@ -139,3 +139,42 @@ ul.menu a.is-active {
     // -webkit-box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
     // box-shadow: 0px 2px 15px rgba(124, 124, 124, 0.466);
 }
+
+
+/* ------------------------------ mobile screen ----------------------------- */
+
+@media screen and (max-width:568px) {
+    #block-mylinks {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: flex-end; */
+        /* align-items: flex-end; */
+        // margin-left: 56rem;
+        position: static;
+        width: 100%;
+        z-index: 1030;
+        /* position: fixed; */
+        display: block;
+        margin: auto;
+        background-color: lightyellow;
+    }
+    .margin--top-10 {
+        margin-top: 0rem !important;
+    }
+    #user-login-form,
+    #user-pass {
+        padding: 3rem;
+        width: 76%;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        -webkit-animation: blinker 1s linear infinite;
+        animation: blinker 1s linear infinite;
+        margin: 0 !important;
+        margin-top: 0 !important;
+        transition: all .5s;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        padding: 1em;
+    }
+}
