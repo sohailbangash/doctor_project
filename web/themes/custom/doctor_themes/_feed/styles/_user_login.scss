@@ -96,9 +96,9 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-left: 56rem;
+    margin-left: 50rem;
     // margin-top: 7rem;
-    width: 19%;
+    width: 33%;
     z-index: 1030;
     position: fixed;
 }
@@ -143,7 +143,26 @@ ul.menu a.is-active {
 
 /* ------------------------------ mobile screen ----------------------------- */
 
-@media screen and (max-width:568px) {
+@media screen and (max-width: 1208px) {
+    #block-mylinks {
+        margin-left: 40rem;
+    }
+}
+
+@media screen and(max-width: 970px) {
+    #block-mylinks {
+        margin-left: 36rem;
+    }
+}
+
+@media screen and(max-width: 877px) {
+    #block-mylinks {
+        margin-left: 32rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (max-width:768px) {
     #block-mylinks {
         /* display: flex; */
         /* flex-direction: column; */
@@ -156,7 +175,6 @@ ul.menu a.is-active {
         /* position: fixed; */
         display: block;
         margin: auto;
-        background-color: lightyellow;
     }
     .margin--top-10 {
         margin-top: 0rem !important;
@@ -169,7 +187,43 @@ ul.menu a.is-active {
         border-radius: 10px;
         -webkit-animation: blinker 1s linear infinite;
         animation: blinker 1s linear infinite;
-        margin: 0 !important;
+        margin: 1rem !important;
+        margin-top: 0 !important;
+        transition: all .5s;
+        position: relative;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        padding: 1em;
+    }
+}
+
+// small devices (mobile, 568px and up)
+@media screen and (max-width: 568px) {
+    #block-mylinks {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: flex-end; */
+        /* align-items: flex-end; */
+        // margin-left: 56rem;
+        position: static;
+        width: 100%;
+        z-index: 1030;
+        /* position: fixed; */
+        display: block;
+        margin: auto;
+    }
+    .margin--top-10 {
+        margin-top: 0rem !important;
+    }
+    #user-login-form,
+    #user-pass {
+        padding: 3rem;
+        width: 76%;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        -webkit-animation: blinker 1s linear infinite;
+        animation: blinker 1s linear infinite;
+        margin: 0rem !important;
         margin-top: 0 !important;
         transition: all .5s;
         position: relative;
